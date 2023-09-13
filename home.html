@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>home</title>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+        
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="iete.css">
+  </head>
+  <body>
+    <div class="home">
+      <div class="header">
+        <img src="logo.png" class="ietelogo">
+        <h1 class="title" style = "padding-top:10px;">IETE</h1>
+          
+   
+        <a href="about.html" class = 'tooltip' ><i class="fa fa-info-circle" aria-hidden="true" style = "font-size:36px;padding-left:20px;padding-right:10px;"></i> <span class = 'tooltiptext'> About</span></a>
+        
+       
+        <a href="events.html" class = 'tooltip' > <i style = 'font-size:40px;padding-top:-5px;' class = 'fa fa-calendar-o'></i><span class = 'tooltiptext'> Events</span></a>
+        
+        
+        <a href="membership.html" class = 'tooltip'><i style = 'font-size:40px;padding-top:-5px;'class="fa fa-user-plus" aria-hidden="true"></i> <span class = 'tooltiptext'>Membership</span></a>
+      
+        
+        <a href="chencon.html" class = 'dropbtn'>CHENCON</a>
+    
+        <div class="dropdown">
+          <button class = 'dropbtn tooltip newsletter'style="height:100%;"><i  style = 'font-size:40px; padding-top:2px;'class = 'fa fa-newspaper-o' aria-hidden="true"></i><span class = 'tooltiptext'>Chenlink Newsletter</span></a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content newsletter" style = 'color:#f9f9f9;'>
+            <a href="http://ietechennai.in/assets/pdf/chenlink1_3.pdf" target="_blank">Vol.1,No.3</a>
+            <a href="http://ietechennai.in/assets/pdf/chenlink1_2.pdf" target="_blank">Vol.1,No.2</a>
+            <a href="http://ietechennai.in/assets/pdf/chenlink1_1.pdf" target="_blank">Vol.1,No.1</a>
+            
+          </div>
+        </div> 
+        <a href="contact.html" class = tooltip><i style = 'font-size:40px; padding-top:0px;' class="fa fa-phone" aria-hidden="true"></i><span class = 'tooltiptext'>Contact</span></a>
+      
+      </div>
+
+      <div class="Intro">
+        <img class="mySlides" src="circuit.gif" style="width:100% ">
+        <img class="mySlides" src="electronics.jpeg" style="width:100%">
+        <img class="mySlides" src="electrical.jpg" style="width:100%;height:100%;">
+        <img class="mySlides" src="telecommunication.jpeg" style="width:100%;">
+
+        <div class="name">The Institution of Electronics and Telecommunication Engineers,Chennai</div>
+        <div class="Quote">"Advancing Technology, Enriching Lives"</div>
+      </div>
+
+      <script>
+        var myIndex = 0;
+       
+        carousel();
+        
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var name = document.querySelector('.name');
+          var quote = document.querySelector('.Quote');
+          
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";
+          
+          
+          setTimeout(carousel, 2000);
+          var colours = ['f2735b', 'f9f9f9', '1f2b37','f2735b'];
+          var color = "#" + colours[myIndex-1];
+          
+        
+          name.style.color = color;
+          quote.style.color = color; // Change image every 2 seconds
+          }
+        </script>
+
+      <div class="Readmore">
+        <div class="Textcontent ">
+          <h1>"INNOVATION FOR THE PEOPLE AND BY THE PEOPLE IS THE REACTION OF OUR NEW INDIA"</h1>
+          <h2>- NARENDRA MODI, HON’BLE PRIME MINISTER OF INDIA.</h2>
+          <span class = readcontent>
+            <span class = 'side-1'>
+          <p style="color: #1f2b37;;">Chennai Centre of IETE is committed to attain commanding heights and achieve the status of “Centre of Excellence” in Technical, Engineering & Management education by harnessing the best practices in educational innovation and through its concerted endeavors like quality teaching, industrial consultancy and training to the aspirants including corporate training.</p>
+          <a href="about.html">Read more</a>
+        </span>
+        <div>
+          <div class = "onerec"></div>
+          <div class="tworec">
+            <img src="ieteimage.jpg" class="threerec">
+          </div>
+       
+        </div>
+          
+          
+        
+        </div>
+        </span>
+        </div>
+      </div>
+
+
+        
+      </div>
+    </div>
+  </body>
+</html>
